@@ -3,7 +3,11 @@ def es_par(num):
     return num%2==0
 
 def solicitar_numero():
-    return int(input('Ingrese numero para evaluar paridad: '))
+    num = int(input('Ingrese numero positivo para evaluar paridad: '))
+    while num <= 0:
+        print('Ingreso invalido')
+        num = int(input('Ingrese numero positivo para evaluar paridad: '))
+    return num
 
 def main():
     num = solicitar_numero()
