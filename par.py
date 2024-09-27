@@ -1,9 +1,10 @@
+LIMITE_VALIDACION = 0
 
 def es_par(num):
     return num%2==0
 
 def es_valido(num):
-    return num > 0
+    return num > LIMITE_VALIDACION
 
 def solicitar_numero():
     num = int(input('Ingrese numero positivo para evaluar paridad: '))
